@@ -1,0 +1,11 @@
+@font-face {
+  font-family: Future Earth;
+  src: url(future_earth/Future\ Earth\ v2.ttf);
+}
+
+* {
+  margin: 0px;
+  font-family: Future Earth;
+  font-size: 10px;
+}
+
