@@ -14,7 +14,7 @@ function loadNodes() {
     else redFlame['point' + i] = [(nodeCount * 10 * flameSize) / nodeCount * i, i]
     orangeFlame['point' + i] = [(nodeCount * 10 * flameSize) / nodeCount * i, 0]
     yellowFlame['point' + i] = [(nodeCount * 10 * flameSize) / nodeCount * i, 0]
-    console.log(redFlame)
+    //console.log(redFlame)
   }
 }
 
@@ -79,13 +79,13 @@ $(() => {
       ctx.fillStyle = 'yellow'
     }
     ctx.moveTo(rp(obj, 1, "x"), rp(obj, 1, "y"))
-    console.log(Object.values(obj).length)
+    //console.log(Object.values(obj).length)
 
     for (let i = 2; i <= Object.values(obj).length; i++) {
       ctx.lineTo(rp(obj, i, "x"), rp(obj, i, "y"))
       console.log(`${rp(obj, i, "x")+' '+ rp(obj, i, "y")}`)
     }
-    console.log('----------------------------')
+    //console.log('----------------------------')
     ctx.stroke()
     if(fill) ctx.fill()
   }
