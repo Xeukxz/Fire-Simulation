@@ -83,7 +83,7 @@ $(() => {
 
     for (let i = 2; i <= Object.values(obj).length; i++) {
       ctx.lineTo(rp(obj, i, "x"), rp(obj, i, "y"))
-      console.log(`${rp(obj, i, "x")+' '+ rp(obj, i, "y")}`)
+      //console.log(`${rp(obj, i, "x")+' '+ rp(obj, i, "y")}`)
     }
     //console.log('----------------------------')
     ctx.stroke()
@@ -120,8 +120,8 @@ $(() => {
 
       let lowerFlame = setInterval(() => {
         Object.values(obj)[highest][1] -= 2 * flameSize
-        console.log(redFlame)
-        console.log(Object.values(obj)[highest - 1])
+        //console.log(redFlame)
+        //console.log(Object.values(obj)[highest - 1])
         if (Object.values(obj)[highest][1] <= (Object.values(obj)[highest + 1][1] + Object.values(obj)[highest - 1][1]) / 4) clearInterval(lowerFlame)
       }, 10);
       return
@@ -152,7 +152,7 @@ $(() => {
     raisePoints(redFlame)
     plotPoints(redFlame)
     adjustEnds()
-    console.log(redFlame)
+    //console.log(redFlame)
   }, 30);
 
   /*   setInterval(() => {
